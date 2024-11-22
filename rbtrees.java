@@ -40,7 +40,7 @@ public class RBTrees {
             if (node.right != nil) {
                 return findNode(findNode, node.right);
             }
-        } else if (findNode.key.compareTo(node.key) == 1) {
+        } else if (findNode.key.compareTo(node.key) == 0) {
             return node;
         }
         return null;
