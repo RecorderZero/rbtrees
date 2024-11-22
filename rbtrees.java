@@ -58,7 +58,7 @@ public class RBTrees {
                 if (node.key.compareTo(temp.key) < 0) {
                     if (temp.left == nil) {
                         temp.left = node;
-                        node.parent += temp;
+                        node.parent = temp;
                         break;
                     } else {
                         temp = temp.left;
