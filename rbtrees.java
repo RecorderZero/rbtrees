@@ -37,7 +37,7 @@ public class RBTrees {
                 return findNode(findNode, node.left);
             }
         } else if (findNode.key.compareTo(node.key) > 0) {
-            if (node.left != nil) {
+            if (node.right != nil) {
                 return findNode(findNode, node.right);
             }
         } else if (findNode.key.compareTo(node.key) == 1) {
